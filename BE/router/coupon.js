@@ -12,4 +12,12 @@ router.get('/', (req, res, next) => {
     res.status(200).json(data);
 });
 
+router.get('/:id', (req, res, next) => {
+    console.log(req.params);
+    const id = req.params.id;
+    const data =  coupondata.find(coupon => coupon.productid === +id);
+
+    res.status(200).json(data);
+});
+
 module.exports = router;
