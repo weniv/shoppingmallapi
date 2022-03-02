@@ -6,14 +6,12 @@
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan'); // 디버깅
-const helmet = require('helmet'); // 보안
 const mallRouter = require('./router/mall.js');
 const path = require('path');
 
 const app = express();
 
 app.use(express.json());
-app.use(helmet());
 app.use(cors());
 app.use(morgan('tiny'));
 
