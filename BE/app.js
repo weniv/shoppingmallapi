@@ -7,6 +7,7 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan'); // 디버깅
 const mallRouter = require('./router/mall.js');
+const couponRouter = require('./router/coupon.js');
 const path = require('path');
 
 const app = express();
@@ -20,6 +21,7 @@ app.use('/asset', express.static(path.resolve(__dirname, "asset")))
 
 
 app.use('/mall', mallRouter);
+app.use('/coupon',couponRouter);
 
 app.get('/', (req, res) => {
     res.send('hello world')
