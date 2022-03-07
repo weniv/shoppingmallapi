@@ -7,7 +7,7 @@ let productdata = [{
     option : {},
     discountRate: 0,
     shippingFee: 1500,
-    detailInfo : 'content1',
+    detailInfoImage : ["asset/detail/2/detail1.jpg","asset/detail/2/detail2.jpg"],
     viewCount : 0,
     pubDate : '2022-02-28',
     modDate : '2022-02-28'
@@ -20,7 +20,7 @@ let productdata = [{
     option : {},
     discountRate: 0,
     shippingFee: 1500,
-    detailInfo : 'content2',
+    detailInfoImage : ["asset/detail/2/detail1.jpg","asset/detail/2/detail2.jpg"],
     viewCount : 0,
     pubDate : '2022-02-28',
     modDate : '2022-02-28'
@@ -33,7 +33,7 @@ let productdata = [{
     option : {},
     discountRate: 0,
     shippingFee: 1500,
-    detailInfo : 'content3',
+    detailInfoImage : ["asset/detail/3/detail1.jpg","asset/detail/3/detail2.jpg","asset/detail/3/detail3.jpg"],
     viewCount : 0,
     pubDate : '2022-02-28',
     modDate : '2022-02-28'
@@ -46,7 +46,7 @@ let productdata = [{
     option : {},
     discountRate: 0,
     shippingFee: 1500,
-    detailInfo : 'content4',
+    detailInfoImage : ["asset/detail/4/detail1.jpg","asset/detail/4/detail2.jpg"],
     viewCount : 0,
     pubDate : '2022-02-28',
     modDate : '2022-02-28'
@@ -63,7 +63,7 @@ let productdata = [{
     },
     discountRate: 19,
     shippingFee: 1500,
-    detailInfo : 'content5',
+    detailInfoImage : ["asset/detail/5/detail1.jpg","asset/detail/5/detail2.jpg"],
     viewCount : 0,
     pubDate : '2022-02-28',
     modDate : '2022-02-28'
@@ -81,7 +81,7 @@ let productdata = [{
     },
     discountRate: 0,
     shippingFee: 1500,
-    detailInfo : 'content6',
+    detailInfoImage : ["asset/detail/6/detail1.jpg","asset/detail/6/detail2.jpg","asset/detail/6/detail3.jpg","asset/detail/6/detail4.jpg","asset/detail/6/detail5.jpg"],
     viewCount : 0,
     pubDate : '2022-02-28',
     modDate : '2022-02-28'
@@ -94,7 +94,7 @@ let productdata = [{
     option : {},
     discountRate: 0,
     shippingFee: 1500,
-    detailInfo : 'content7',
+    detailInfoImage : ["asset/detail/7/detail1.jpg","asset/detail/7/detail2.jpg"],
     viewCount : 0,
     pubDate : '2022-02-28',
     modDate : '2022-02-28'
