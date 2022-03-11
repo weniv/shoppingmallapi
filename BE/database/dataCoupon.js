@@ -11,8 +11,8 @@ let coupondata = [{
     id : 2,
     productid: 5,
     couponName : 'Hack Your Life 개발자 노트북 파우치 19% 할인 쿠폰',
-    discount: 0,
-    discountRate: 0.19,
+    discount: 2000,
+    discountRate: 0,
     stockCount : 100,
     pubDate : '2022-02-28',
     modDate : '2022-02-28'
