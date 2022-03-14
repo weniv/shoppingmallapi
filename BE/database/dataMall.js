@@ -4,7 +4,7 @@ let productdata = [{
     price : 12500,
     stockCount : 100,
     thumbnailImg : 'asset/img/1/thumbnailImg.jpg',
-    option : {},
+    option : [],
     discountRate: 0,
     shippingFee: 1500,
     detailInfoImage : ["asset/detail/2/detail1.png","asset/detail/2/detail2.png"],
@@ -17,7 +17,7 @@ let productdata = [{
     price : 3500,
     stockCount : 1000,
     thumbnailImg : 'asset/img/2/thumbnailImg.jpg',
-    option : {},
+    option : [],
     discountRate: 0,
     shippingFee: 1500,
     detailInfoImage : ["asset/detail/2/detail1.png","asset/detail/2/detail2.png"],
@@ -30,7 +30,7 @@ let productdata = [{
     price : 17500,
     stockCount : 0,
     thumbnailImg : 'asset/img/3/thumbnailImg.jpg',
-    option : {},
+    option : [],
     discountRate: 0,
     shippingFee: 1500,
     detailInfoImage : ["asset/detail/3/detail1.png","asset/detail/3/detail2.png","asset/detail/3/detail3.png"],
@@ -43,7 +43,7 @@ let productdata = [{
     price : 13500,
     stockCount : 100,
     thumbnailImg : 'asset/img/4/thumbnailImg.jpg',
-    option : {},
+    option : [],
     discountRate: 0,
     shippingFee: 1500,
     detailInfoImage : ["asset/detail/4/detail1.png","asset/detail/4/detail2.png"],
@@ -56,11 +56,17 @@ let productdata = [{
     price : 36000,
     stockCount : 230,
     thumbnailImg : 'asset/img/5/thumbnailImg.jpg',
-    option : {
-        'optionName' : '사이즈',
-        '13인치' : 0,
-        '15인치' : 1000
-    },
+    option : [
+        {
+        'id':1,
+        'optionName':'13인치',
+        'additionalFee':0
+        },
+        {
+        'id':2,
+        'optionName':'15인치',
+        'additionalFee':1000
+        }],
     discountRate: 19,
     shippingFee: 1500,
     detailInfoImage : ["asset/detail/5/detail1.png","asset/detail/5/detail2.png"],
@@ -73,12 +79,19 @@ let productdata = [{
     price : 5500,
     stockCount : 1000,
     thumbnailImg : 'asset/img/6/thumbnailImg.jpg',
-    option : {
-        'optionName' : '종류',
-        '위니브 개발자 스티커팩' : 0,
-        '위니브 프랜즈 스티커팩' : 0,
-        '스티커팩 세트(개발자+프렌즈)' : 5000
-    },
+    option : [{
+            'id':1,
+            'optionName':'위니브 개발자 스티커팩',
+            'additionalFee':0
+        },{
+            'id':2,
+            'optionName':'위니브 프랜즈 스티커팩',
+            'additionalFee':0
+        },{
+            'id':3,
+            'optionName':'스티커팩 세트(개발자+프렌즈)',
+            'additionalFee':5000
+        }],
     discountRate: 0,
     shippingFee: 1500,
     detailInfoImage : ["asset/detail/6/detail1.png","asset/detail/6/detail2.png","asset/detail/6/detail3.png","asset/detail/6/detail4.png","asset/detail/6/detail5.png"],
@@ -91,7 +104,7 @@ let productdata = [{
     price : 8000,
     stockCount : 1000,
     thumbnailImg : 'asset/img/7/thumbnailImg.jpg',
-    option : {},
+    option : [],
     discountRate: 0,
     shippingFee: 1500,
     detailInfoImage : ["asset/detail/7/detail1.png","asset/detail/7/detail2.png"],
