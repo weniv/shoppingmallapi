@@ -1,6 +1,5 @@
 services:
   final-coding-test-api-with-node:
-
     build:
       context: ./BE
       dockerfile: Dockerfile
