@@ -12,7 +12,7 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.final-coding-test-node.rule=Host(`api.wenivops.co.kr`) && PathPrefix(`/services/final-coding-test`)"
       - "traefik.http.middlewares.final-coding-test-node-strip.stripprefix.prefixes=/services/final-coding-test"
-      - "traefik.http.routers.final-coding-test-node.middlewares=final-coding-test-strip"
+      - "traefik.http.routers.final-coding-test-node.middlewares=final-coding-test-node-strip"
       - "traefik.http.routers.final-coding-test-node.entrypoints=websecure"
       - "traefik.http.routers.final-coding-test-node.tls=true"
       - "traefik.http.services.final-coding-test-node.loadbalancer.server.port=9102"
