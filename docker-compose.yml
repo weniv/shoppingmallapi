@@ -1,0 +1,26 @@
+services:
+  final-coding-test-api-with-node:
+
+    build:
+      context: ./BE
+      dockerfile: Dockerfile
+    container_name: final-coding-test-api-with-node
+    restart: always
+    networks:
+      - traefik-network
+    labels:
+      # Traefik 설정
+      - "traefik.enable=true"
+      - "traefik.http.routers.final-coding-test-node.rule=Host(`api.wenivops.co.kr`) && PathPrefix(`/services/final-coding-test`)"
+      - "traefik.http.middlewares.final-coding-test-node-strip.stripprefix.prefixes=/services/final-coding-test"
+      - "traefik.http.routers.final-coding-test-node.middlewares=final-coding-test-strip"
+      - "traefik.http.routers.final-coding-test-node.entrypoints=websecure"
+      - "traefik.http.routers.final-coding-test-node.tls=true"
+      - "traefik.http.services.final-coding-test-node.loadbalancer.server.port=9102"
+    volumes:
+      # 애셋 파일들을 위한 볼륨 설정
+      - ./BE/asset:/app/asset
+
+networks:
+  traefik-network:
+    external: true  # 중요: 기존 Traefik 네트워크 사용
